@@ -2,7 +2,7 @@
 Replication of the experiment :<br />
 Muth et al. (2012): Give me Gestalt! Preference for cubist artworks revealing high detectability of objects <br />
 <br />
-done by <br />
+Done by :<br />
 Paribartan humagain <br />
 Sophie Kühne <br />
 Moritz Mergheim <br />
