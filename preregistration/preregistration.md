@@ -40,8 +40,8 @@ Online study built with babe including (html, Javascript and Css), the images fr
 
 
 # Analysis Plan
-• for single trial data: if they took longer than 30 secs to decide? 
-• for data from a whole participant:
+• for single trial data: if they took longer than 30 secs to decide?<br> 
+• for data from a whole participant:<br>
     if they rated all likleness/recognitions the same, if the answered in <1s if they took longer than 10s 5 or more trials if their         fvisual impairment is to high(define to high?)
 
 
