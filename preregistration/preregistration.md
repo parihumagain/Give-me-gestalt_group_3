@@ -3,8 +3,7 @@
 Gestalt theory has been around for a while, and it was suggested that it was never initially proven, that people prefer art, in which they can recognize patterns and structures, before the experiment we try and reproduce. Therefore cubist art is chosen, since it is a mixture of forms, which need to be assembled by the viewer. After looking at the experiment we noticed, that only 20 people were tested and for those 20 people a strong correlation between likliness and understanding was suggested. We aim to have more participants doing our study to get a broader and more reliable result. 
 
 # Research questions
-Is there a relation between the recognition of patterns and structures and the likleness of a painting?
-
+Is there a positive relation between the recognition of patterns and structures and the likleness of a cubist painting?
 
 # Design of the Experiment
 
@@ -14,21 +13,26 @@ what kind of a study is it (e.g., a 2x2 within-subjects factorial design)
 
 ## Sampling plan
 
-Participants: We plan on recruiting as many participants as possible (e.g. friends, family, course members,…), but we would like to have at least 40, to give a broader outcome for the study.<br>
-Restrictions: People with impaired colour vision and people with impaired vision (kurz-/weitsichtig) and without correction
+Participants: We plan on recruiting as many participants as possible (e.g. friends, family, course members,…), but we would like to have at least 40, to give a broader outcome for the study.
+
+Restrictions: People with impaired colour vision and people with impaired vision without correction (shortsightedness/longsightedness) 
 
 
 ## Materials
 
-Online study built with babe including (html, Javascript and Css), the images from the original experiment. 
+   - Colour test <br>
+   - the images of the cubist paintings (from now on only to be called images) from the original             experiment(120 cubist Paintings: Pablo Picasso (47),Georges Braque (33), and Juan Gris (40) format?, when? What type?(monochrome, colour)?)
 
 ## Procedure
 
-1. Group is randomly chosen and participant is asked to do one of three experiments, each containing 40 images out of the original pool of pictures.<br> 
-2. Ensuring approx. Same size on every disply for all participants.<br>
-3. Vision test: Vision is tested with Ishihara and Snellen testing, ensuring normal vision for all participants.<br> 
-4. First round: Participants rates likleness of picture shown in random order on a scale of 1-7.<br> 
-5. Second round Participant rates how well forms/patterns they are able to identify on a scale of 1-7
+1. „Do you consider yourself an expert in Cubist art?“ If you do, this experiment is unfortunately not for you! <br>
+2. Group is randomly chosen and participant is assigned to one of three experiments, each containing 40 images out of the original pool of images.<br>
+3. Ensuring approx. Same size of images and vision tests every screen for all participants.<br>
+4. Vision test: Vision is tested with Ishihara and Snellen testing, ensuring normal vision for all participants.<br>
+5. Trials?? <br>
+6. First round: Participants rate how well they like images shown in random order on a scale of 1-7*<br>
+7. Second round Participants rate how well they are able to identify forms/patterns  in the whole image on a scale of 1-7* (in the same pictures from 4, randmoly mixed)<br>
+*1 not at all- 7 very much
 
 ## Measured variables
 • based on the design you described, what are the variables that you are going to measure <br> 
@@ -36,18 +40,19 @@ Online study built with babe including (html, Javascript and Css), the images fr
   • how well they think they are able to identify patterns in scale 1-7 (1 being very bad and 7 being very good) <br>
 • how will they be measured in the experiment? <br>
     Either pole or single numbers that can be clicked? <br>
-• how will they be treated???? <br>
+• how will they be treated: 1 not at all- 7 very much
 
 
 # Analysis Plan
-• for single trial data: if they took longer than 30 secs to decide?<br> 
-• for data from a whole participant:<br>
-    if they rated all likleness/recognitions the same, if the answered in <1s if they took longer than 10s 5 or more trials if their         fvisual impairment is to high(define to high?)
-
 
 ## Exclusion criteria
-  • for single trial data: if they took longer than 10 secs to decide?<br>
-  • for data from a whole participant: if they rated all likleness/recognitions the same, if the answered in <1s if they took longer than 10s 5 or more trials if their visual impairment is to high(define to high?)
+• for single trial data: <br>
+        ◦ if they took longer than 2min to decide (to ensure that the participant is not to distracted)<br>
+        ◦ if they rated all likeliness/recognitions the same, if the answered in <3s 
+    • whole participant data excluded:<br>
+        ◦  if 3 trials shorter than 3 sec<br>
+        ◦ Whole participant excluded if they took longer than 3 min for each of 5 continuos paintings<br>
+    • if they do not pass vision tests<br>
 
 
 ## Confirmatory hypothesis testing
