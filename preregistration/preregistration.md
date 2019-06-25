@@ -1,6 +1,8 @@
 
 # Background
-Gestalt theory has been around for a while, and it was suggested that it was never initially proven, that people prefer art, in which they can recognize patterns and structures, before the experiment we try and reproduce. Therefore cubist art is chosen, since it is a mixture of forms, which need to be assembled by the viewer. After looking at the experiment we noticed, that only 20 people were tested and for those 20 people a strong correlation between likliness and understanding was suggested. We aim to have more participants doing our study to get a broader and more reliable result. 
+> "The finding of this strong correlation between detectability and preference offers wide implications for art history and human cognition as it points to a mechanism that allows us to derive pleasure from searching for and finding meaningful patterns." [1] <br>
+
+Gestalt theory has been around for a while and it was suggested that it was never initially proven, that people prefer art in which they can recognize patterns and structures. The experiment we reproduce acknowledge this lack of scientific proof of a relation that was proposed in many different contexts: philosophy, psychology and neuroscience. Cubist art is chosen, since it is a mixture of forms, which need to be assembled by the viewer - and that are more or less easy to detect. Reviewing the experiment we noticed that only 20 participants were tested and a strong positive correlation between likliness and understanding was suggested [1]. We aim to have more participants for our study to get a broader and more reliable result. 
 
 # Research questions
 Is there a positive relation between the recognition of patterns and structures and the likleness of a cubist painting?
@@ -8,19 +10,29 @@ Is there a positive relation between the recognition of patterns and structures 
 # Design of the Experiment
 
 ## General remarks about the design
-what kind of a study is it (e.g., a 2x2 within-subjects factorial design)
 
+what kind of a study is it (e.g., a 2x2 within-subjects factorial design)
 
 ## Sampling plan
 
-Participants: We plan on recruiting as many participants as possible (e.g. friends, family, course members,…), but we would like to have at least 40, to give a broader outcome for the study.
+### Participants
+We plan on recruiting as many participants as possible, but we would like to have at least 40, to give a broader outcome for the study.
+Potential participants include: <br>
+* course members <br>
+* other students via mailing lists <br>
+* friends, family <br>
 
-Restrictions: People with impaired colour vision and people with impaired vision without correction (shortsightedness/longsightedness) 
+### Restrictions
+- people with impaired colour vision
+- people with impaired vision without correction (shortsightedness/longsightedness)
+- people with expertise in cubist art
 
 
 ## Materials
-
-   - Colour test <br>
+To garantee a data acquisition as similar as possible to the original experiment we use the same material. 
+   - To ensure normal/corrected-to-normal vision: <br>
+     * Standard Snellen's eye chart test <br>
+     * Short version of the Ishihara Colour test <br>
    - the images of the cubist paintings (from now on only to be called images) from the original experiment <br>
      * 120 cubist Paintings: Pablo Picasso (47), Georges Braque (33) and Juan Gris (40) <br>
      * the images are adapted to 450 pixels width and 600 pixels height <br>
@@ -29,6 +41,9 @@ Restrictions: People with impaired colour vision and people with impaired vision
    format?, when? What type?(monochrome, colour)?)
 
 ## Procedure
+The exeriment is conducted as a browser experiment participants can access online. It is diveded in three major blocks, first the introduction, used to explain the following tasks and to perform vision tests and request former knowledge in cubist art, followed by the main experiment which consists of two blocks.
+
+### Introduction
 
 1. „Do you consider yourself an expert in Cubist art?“ If you do, this experiment is unfortunately not for you! <br>
 2. Group is randomly chosen and participant is assigned to one of three experiments, each containing 40 images out of the original pool of images.<br>
@@ -68,5 +83,9 @@ Restrictions: People with impaired colour vision and people with impaired vision
   • describe by what means you will test the hypotheses mentioned earlier <br>
   • when you do this you will want to reformulate the hypotheses in a more precise fashion <br>
      • e.g., if H1 is true, we expect that parameter X is credibly bigger than zero in the posterior distribution <br>  
+     
+## Resources
+
+[1] MUTH, Claudia; PEPPERELL, Robert; CARBON, Claus-Christian. Give me Gestalt! Preference for cubist artworks revealing high detectability of objects. Leonardo, 2013, 46. Jg., Nr. 5, S. 488-489.
 
 
