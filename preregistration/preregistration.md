@@ -21,10 +21,10 @@ Restrictions: People with impaired colour vision and people with impaired vision
 ## Materials
 
    - Colour test <br>
-   - the images of the cubist paintings (from now on only to be called images) from the original experiment 
-         - 120 cubist Paintings: Pablo Picasso (47), Georges Braque (33) and Juan Gris (40)
-         - the images are adapted to 450 pixels width and 600 pixels height 
-         - there are monochrome and coloured images 
+   - the images of the cubist paintings (from now on only to be called images) from the original experiment <br>
+         * 120 cubist Paintings: Pablo Picasso (47), Georges Braque (33) and Juan Gris (40)
+         * the images are adapted to 450 pixels width and 600 pixels height 
+         * there are monochrome and coloured images 
    
    format?, when? What type?(monochrome, colour)?)
 
