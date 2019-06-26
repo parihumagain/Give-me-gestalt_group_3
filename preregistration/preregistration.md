@@ -58,45 +58,49 @@ Participants are assigned to one of three groups, each containing 40 images out 
 ### Experiment Part 1: Preference Rating
 1. Description of the task <br>
 2. Task itself: <br>
-  * Participants are shown 40 Stimuli in randomized order <br>
-  * Each image has to be rated on liking using a 7-point-Likert-scale from 1 ('not at all') to 7 ('very') <br>
+    * Participants are shown 40 Stimuli in randomized order <br>
+    * Each image has to be rated on liking using a 7-point-Likert-scale from 1 ('not at all') to 7 ('very') <br>
   
 ### Experiment Part 2: Detectability
 1. Description of the task<br>
 2. Task itself: <br>
-  * Participants are shown 40 Stimuli in randomized order <br>
-  * Each image has to be rated on how well object can be detected using a 7-point-Likert-scale from 1 ('not at all') to 7 ('very') <br>
+    * Participants are shown 40 Stimuli in randomized order <br>
+    * Each image has to be rated on how well object can be detected using a 7-point-Likert-scale from 1 ('not at all') to 7 ('very') <br>
   
 ### Closing Part
 Last part consists of a 'Thank you for participation' message.
 
 ## Measured variables
 The data aquisition will assign several values from an ordninal skala from 1 to 7 (see above) to each image for <br>
-  * Detactability (X) <br>
-  * Linking (Y) <br>
+- Detactability (X) <br>
+- Linking (Y) <br>
 such that for each picture an average value can be computed.
 
 # Analysis Plan
 
 ## Exclusion criteria
 1. for single image/trial data: <br>
-  ◦ if they took > 2min to decide for one image (to ensure that the participant is not to distracted)<br>
-  * if they answered in < 3s <br>
-  ◦ if they rated all likeliness/recognitions the same
+    * if they took > 2min to decide for one image (to ensure that the participant is not to distracted)<br>
+    * if they answered in < 3s <br>
+    * if they rated all likeliness/recognitions the same
 2. whole participant data excluded:<br>
-  ◦ if 3 images answerded in less than 3 sec<br>
-  ◦ Whole participant excluded if they took longer than 3 min for each of 5 continuos paintings<br>
-  * if they do not pass vision tests<br>
-
-
+    * if 3 images answerded in less than 3 sec<br>
+    * Whole participant excluded if they took longer than 3 min for each of 5 continuos paintings<br>
+    * if they do not pass vision tests<br>
+    * if they have expertise in cubist art <br>
+    
 ## Confirmatory hypothesis testing
-  • if applicable, describe any transformations that you might want to apply to the data<br>
-  • describe your statistical model <br>
-        • e.g., we will use the ‘brms’ package to run a Bayesian regression model regressing <br>
-        XYZ against A, B and C and their interactions<br>
-  • describe by what means you will test the hypotheses mentioned earlier <br>
-  • when you do this you will want to reformulate the hypotheses in a more precise fashion <br>
-     • e.g., if H1 is true, we expect that parameter X is credibly bigger than zero in the posterior distribution <br>  
+
+### Data
+Our Data will have following format (example):
+
+<b> Liking: </b> <br>
+
+Image #  | Participant # | Participant # | ...        | Average   |
+-------- | --------      | --------      | --------   | --------  |
+001      | 4             | 6             | ...        | ...       |
+002      | 6             | 7             | ...        | ...       |
+...      | ...           | ...           | ...        | ...       |
      
 ## Resources
 
