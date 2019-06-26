@@ -2,7 +2,7 @@
 # Background
 > "The finding of this strong correlation between detectability and preference offers wide implications for art history and human cognition as it points to a mechanism that allows us to derive pleasure from searching for and finding meaningful patterns." [1] <br>
 
-Gestalt theory has been around for a while and it was suggested that it was never initially proven, that people prefer art in which they can recognize patterns and structures. The experiment we reproduce acknowledge this lack of scientific proof of a relation that was proposed in many different contexts: philosophy, psychology and neuroscience. Cubist art is chosen, since it is a mixture of forms, which need to be assembled by the viewer - and that are more or less easy to detect. Reviewing the experiment we noticed that only 20 participants were tested and a strong positive correlation between likliness and understanding was suggested [1]. We aim to have more participants for our study to get a broader and more reliable result. 
+Gestalt theory has been around for a while but it was never initially proven, that people prefer art in which they can recognize patterns and structures. The experiment we reproduce acknowledge this lack of scientific proof of a relation that was proposed in many different contexts: philosophy, psychology and neuroscience. Cubist art is chosen, since it is a mixture of forms, which need to be assembled by the viewer - and that are more or less easy to detect. Reviewing the experiment we noticed that only 20 participants were tested and a strong positive correlation between likliness and understanding was suggested [1]. We aim to have more participants for our study to get a broader and more reliable result. 
 
 # Research questions
 Is there a positive relation between the recognition of patterns and structures and the likleness of a cubist painting?
@@ -38,41 +38,55 @@ To garantee a data acquisition as similar as possible to the original experiment
      * the images are adapted to 450 pixels width and 600 pixels height <br>
      * there are monochrome and coloured images <br>
    
-   format?, when? What type?(monochrome, colour)?)
+   <b>format?, when? What type?(monochrome, colour)?)<b>
 
 ## Procedure
 The exeriment is conducted as a browser experiment participants can access online. It is diveded in three major blocks, first the introduction, used to explain the following tasks and to perform vision tests and request former knowledge in cubist art, followed by the main experiment which consists of two blocks.
 
 ### Introduction
+The introduction part consistis of following sections. <br>
+1. Welcome message and short describtion of the procedure in general. <br>
+2. Request about former knowledge in cubist art: <br>
+  * „Do you consider yourself an expert in Cubist art or were you ever engaged in any kind of cubist art education?“ <br>
+  * Participants who answer "Yes" have to be excluded after data aquisition. <br>
+3. Ishihara Colour Test: Participants have to fill in the correct number in a blank space, those who give a wrong answer have to be excluded. <br>
+4. <b>Snelllen's Eye Chart Test: ??? <b> <br>
+5. <b>Ensuring approx. Same size of images and vision tests every screen for all participants. ???<b> <br>
+   
+Participants are assigned to one of three groups, each containing 40 images out of the original pool of images. The original experiment showed in each trial all 120 images to each participant - since that leads to a very long experiment, we deceided to shorten the procedure to make sure that participants finish the experiment.<br>
 
-1. „Do you consider yourself an expert in Cubist art?“ If you do, this experiment is unfortunately not for you! <br>
-2. Group is randomly chosen and participant is assigned to one of three experiments, each containing 40 images out of the original pool of images.<br>
-3. Ensuring approx. Same size of images and vision tests every screen for all participants.<br>
-4. Vision test: Vision is tested with Ishihara and Snellen testing, ensuring normal vision for all participants.<br>
-5. Trials?? <br>
-6. First round: Participants rate how well they like images shown in random order on a scale of 1-7*<br>
-7. Second round Participants rate how well they are able to identify forms/patterns  in the whole image on a scale of 1-7* (in the same pictures from 4, randmoly mixed)<br>
-*1 not at all- 7 very much
+### Experiment Part 1: Preference Rating
+1. Description of the task <br>
+2. Task itself: <br>
+  * Participants are shown 40 Stimuli in randomized order <br>
+  * Each image has to be rated on liking using a 7-point-Likert-scale from 1 ('not at all') to 7 ('very') <br>
+  
+### Experiment Part 2: Detectability
+1. Description of the task<br>
+2. Task itself: <br>
+  * Participants are shown 40 Stimuli in randomized order <br>
+  * Each image has to be rated on how well object can be detected using a 7-point-Likert-scale from 1 ('not at all') to 7 ('very') <br>
+  
+### Closing Part
+Last part consists of a 'Thank you for participation' message.
 
 ## Measured variables
-• based on the design you described, what are the variables that you are going to measure <br> 
-  • Variables measured: likleness on scale 1-7 <br>
-  • how well they think they are able to identify patterns in scale 1-7 (1 being very bad and 7 being very good) <br>
-• how will they be measured in the experiment? <br>
-    Either pole or single numbers that can be clicked? <br>
-• how will they be treated: 1 not at all- 7 very much
-
+The data aquisition will assign several values from an ordninal skala from 1 to 7 (see above) to each image for <br>
+  * Detactability (X) <br>
+  * Linking (Y) <br>
+such that for each picture an average value can be computed.
 
 # Analysis Plan
 
 ## Exclusion criteria
-• for single trial data: <br>
-        ◦ if they took longer than 2min to decide (to ensure that the participant is not to distracted)<br>
-        ◦ if they rated all likeliness/recognitions the same, if the answered in <3s 
-    • whole participant data excluded:<br>
-        ◦  if 3 trials shorter than 3 sec<br>
-        ◦ Whole participant excluded if they took longer than 3 min for each of 5 continuos paintings<br>
-    • if they do not pass vision tests<br>
+1. for single image/trial data: <br>
+  ◦ if they took > 2min to decide for one image (to ensure that the participant is not to distracted)<br>
+  * if they answered in < 3s <br>
+  ◦ if they rated all likeliness/recognitions the same
+2. whole participant data excluded:<br>
+  ◦ if 3 images answerded in less than 3 sec<br>
+  ◦ Whole participant excluded if they took longer than 3 min for each of 5 continuos paintings<br>
+  * if they do not pass vision tests<br>
 
 
 ## Confirmatory hypothesis testing
