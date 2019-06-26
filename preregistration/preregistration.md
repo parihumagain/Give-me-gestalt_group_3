@@ -101,7 +101,25 @@ Image #  | Participant # | Participant # | ...        | Average   |
 001      | 4             | 6             | ...        | ...       |
 002      | 6             | 7             | ...        | ...       |
 ...      | ...           | ...           | ...        | ...       |
-     
+
+
+<b> Detectability: </b> <br>
+
+Image #  | Participant # | Participant # | ...        | Average   |
+-------- | --------      | --------      | --------   | --------  |
+001      | 3             | 5             | ...        | ...       |
+002      | 5             | 7             | ...        | ...       |
+...      | ...           | ...           | ...        | ...       |
+
+<b> Results in: </b> <br>
+
+Image #  | Liking_Average | Detectability_Avergae | 
+-------- | --------      | --------               | 
+001      | 5             | 4                      | 
+002      | 6             | 6                      | 
+...      | ...           | ...                    | 
+
+
 ## Resources
 
 [1] MUTH, Claudia; PEPPERELL, Robert; CARBON, Claus-Christian. Give me Gestalt! Preference for cubist artworks revealing high detectability of objects. Leonardo, 2013, 46. Jg., Nr. 5, S. 488-489.
