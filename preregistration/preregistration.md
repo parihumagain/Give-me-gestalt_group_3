@@ -92,7 +92,7 @@ such that for each picture an average value can be computed.
 ## Confirmatory hypothesis testing
 
 ### Data
-Our Data will have following format (example):
+Our clean data will have following format (example):
 
 <b> Liking: </b> <br>
 
@@ -118,6 +118,9 @@ Image #  | Liking_Average | Detectability_Avergae |
 001      | 5             | 4                      | 
 002      | 6             | 6                      | 
 ...      | ...           | ...                    | 
+
+The original study did a simple plot with Detectablilty (X-axis) and Liking (Y-axis). <br>
+We want to do an additional....???
 
 
 ## Resources
