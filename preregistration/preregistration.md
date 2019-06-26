@@ -38,7 +38,7 @@ To garantee a data acquisition as similar as possible to the original experiment
      * the images are adapted to 450 pixels width and 600 pixels height <br>
      * there are monochrome and coloured images <br>
    
-   <b>format?, when? What type?(monochrome, colour)?)<b>
+   format?, when? What type?(monochrome, colour)?
 
 ## Procedure
 The exeriment is conducted as a browser experiment participants can access online. It is diveded in three major blocks, first the introduction, used to explain the following tasks and to perform vision tests and request former knowledge in cubist art, followed by the main experiment which consists of two blocks.
@@ -50,8 +50,8 @@ The introduction part consistis of following sections. <br>
   * „Do you consider yourself an expert in Cubist art or were you ever engaged in any kind of cubist art education?“ <br>
   * Participants who answer "Yes" have to be excluded after data aquisition. <br>
 3. Ishihara Colour Test: Participants have to fill in the correct number in a blank space, those who give a wrong answer have to be excluded. <br>
-4. <b>Snelllen's Eye Chart Test: ??? <b> <br>
-5. <b>Ensuring approx. Same size of images and vision tests every screen for all participants. ???<b> <br>
+4. Snelllen's Eye Chart Test: ???<br>
+5. Ensuring approx. Same size of images and vision tests every screen for all participants. ???<b> <br>
    
 Participants are assigned to one of three groups, each containing 40 images out of the original pool of images. The original experiment showed in each trial all 120 images to each participant - since that leads to a very long experiment, we deceided to shorten the procedure to make sure that participants finish the experiment.<br>
 
