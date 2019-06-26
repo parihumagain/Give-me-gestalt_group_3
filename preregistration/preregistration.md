@@ -47,11 +47,11 @@ The exeriment is conducted as a browser experiment participants can access onlin
 The introduction part consistis of following sections. <br>
 1. Welcome message and short describtion of the procedure in general. <br>
 2. Request about former knowledge in cubist art: <br>
-  * „Do you consider yourself an expert in Cubist art or were you ever engaged in any kind of cubist art education?“ <br>
-  * Participants who answer "Yes" have to be excluded after data aquisition. <br>
+   * „Do you consider yourself an expert in Cubist art or were you ever engaged in any kind of cubist art education?“ <br>
+   * Participants who answer "Yes" have to be excluded after data aquisition. <br>
 3. Ishihara Colour Test: Participants have to fill in the correct number in a blank space, those who give a wrong answer have to be excluded. <br>
 4. Snelllen's Eye Chart Test: ???<br>
-5. Ensuring approx. Same size of images and vision tests every screen for all participants. ???<b> <br>
+5. Ensuring approx. Same size of images and vision tests every screen for all participants. ??? <br>
    
 Participants are assigned to one of three groups, each containing 40 images out of the original pool of images. The original experiment showed in each trial all 120 images to each participant - since that leads to a very long experiment, we deceided to shorten the procedure to make sure that participants finish the experiment.<br>
 
