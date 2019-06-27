@@ -48,7 +48,7 @@ The introduction part consistis of following sections. <br>
 2. Request about former knowledge in cubist art: <br>
    * „Do you consider yourself an expert in Cubist art or were you ever engaged in any kind of cubist art education?“ <br>
    * Participants who answer "Yes" have to be excluded after data aquisition. <br>
-3. Snellen's Eye Chart Test: We will show the participent a part of a snellen chart from line 6 to line 11 and ask them to write down 3 lines from the chart.  <br>
+3. Snellen's Eye Chart Test: We will show the participent a snellen chart and ask them to write down from which line they find it difficult to read.  <br>
 4. Ensuring approx. Same size of images and vision tests every screen for all participants.  <br>
  
 
