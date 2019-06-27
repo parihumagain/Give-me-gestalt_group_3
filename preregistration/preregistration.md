@@ -119,7 +119,7 @@ Image #  | Liking_Average | Detectability_Average |
 002      | 6             | 6                      | 
 ...      | ...           | ...                    | 
 
-We plot our data with Detectablilty in X-axis and Liking Y-axis and see the corelation between x-y axis. <br>
+
 
 
 ## Analysis
