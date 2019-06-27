@@ -121,6 +121,11 @@ Image #  | Liking_Average | Detectability_Average |
 We plot our data with Detectablilty in X-axis and Liking Y-axis and see the corelation between x-y axis. <br>
 
 
+## Analysis
+
+The analysis of the original paper was done with a linear regression after averaging the liking and detectability for each image. 
+On recommendation of Michael Franke we are planning on doing a baysian analysis in r.
+
 
 ## Resources
 
