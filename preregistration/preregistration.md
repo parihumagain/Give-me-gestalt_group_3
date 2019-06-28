@@ -14,7 +14,7 @@ Is there a positive relation between the recognition of patterns and structures 
 
 ## General remarks about the design
 
-what kind of a study is it (e.g., a 2x2 within-subjects factorial design)
+It is a one factorial subject study?
 
 ## Sampling plan
 
