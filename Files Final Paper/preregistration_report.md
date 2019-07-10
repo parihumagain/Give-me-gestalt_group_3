@@ -114,17 +114,16 @@ image#   | submissionID  | Liking        | Detectability   | ...       |
 002      | 2             | 3             | 1               | ...       |
 ...      | ...           | ...           | ...             | ...       |
 
-## Analysis
+### Analysis
 
 The analysis of the original paper was done with a linear regression. We plan to replicated this to compare the results.
 On recommendation of Michael Franke we are planning on doing a baysian analysis in r, as well. <br>
 
-### Linear Regression
+#### Linear Regression
 
 1. Testing assumptions for linear regression: <br>
   * Shapirotest for testing normal distribution of liking and detectability
   * gvlma package for testing
-    * 
    ```
    hist(final_data2$liking)
    hist(final_data2$detectability)
@@ -136,12 +135,12 @@ On recommendation of Michael Franke we are planning on doing a baysian analysis 
    ```
    
 2. Calculating correlation
-   ```
-   cor(final_data$liking, final_data$detectability)
-   ```
+```
+cor(final_data$liking, final_data$detectability)
+```
 3. Ploting 
    
-### Bayesian Fixed-effects Model
+#### Bayesian Fixed-effects Model
 
 
   
