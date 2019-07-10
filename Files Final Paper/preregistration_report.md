@@ -103,40 +103,48 @@ ACHTUNG WAS IST MIT STANDARD ABWEICHUNG?????????????????????????????????????????
 ## Confirmatory hypothesis testing
 
 ### Data
-Our clean data will have following format (example):
+Our clean data will have following format (example): <br>
 
-<b> Liking: </b> <br>
-
-Image #  | Participant01 | Participant02 | ...        | Average   |
--------- | --------      | --------      | --------   | --------  |
-001      | 4             | 6             | ...        | ...       |
-002      | 6             | 7             | ...        | ...       |
-...      | ...           | ...           | ...        | ...       |
-
-
-<b> Detectability: </b> <br>
-
-Image #  | Participant01 | Participant02 | ...        | Average   |
--------- | --------      | --------      | --------   | --------  |
-001      | 3             | 5             | ...        | ...       |
-002      | 5             | 7             | ...        | ...       |
-...      | ...           | ...           | ...        | ...       |
-
-<b> Results in: </b> <br>
-
-Image #  | Liking_Average | Detectability_Average | 
--------- | --------      | --------               | 
-001      | 5             | 4                      | 
-002      | 6             | 6                      | 
-...      | ...           | ...                    | 
-
-
-
+image#   | submissionID  | Liking        | Detectability   | ...       |
+-------- | --------      | --------      | --------        | --------  |
+001      | 1             | 6             | 4               | ...       |
+001      | 2             | 7             | 5               | ...       |
+...      | ...           | ...           | ...             | ...       |
+002      | 1             | 5             | 2               | ...       |
+002      | 2             | 3             | 1               | ...       |
+...      | ...           | ...           | ...             | ...       |
 
 ## Analysis
 
-The analysis of the original paper was done with a linear regression after averaging the liking and detectability for each image. 
-On recommendation of Michael Franke we are planning on doing a baysian analysis in r.
+The analysis of the original paper was done with a linear regression. We plan to replicated this to compare the results.
+On recommendation of Michael Franke we are planning on doing a baysian analysis in r, as well. <br>
+
+### Linear Regression
+
+1. Testing assumptions for linear regression: <br>
+  * Shapirotest for testing normal distribution of liking and detectability
+  * gvlma package for testing
+    * 
+   ```
+   hist(final_data2$liking)
+   hist(final_data2$detectability)
+   par(mfrow=c(2,2))
+   typeof(final_data2)
+
+   mod2 <- lm(final_data$liking ~ final_data$detectability, data=final_data)
+   gvlma::gvlma(mod2)
+   ```
+   
+2. Calculating correlation
+   ```
+   cor(final_data$liking, final_data$detectability)
+   ```
+3. Ploting 
+   
+### Bayesian Fixed-effects Model
+
+
+  
 
 ## Resources
 
