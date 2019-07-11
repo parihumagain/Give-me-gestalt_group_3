@@ -52,7 +52,7 @@ Change data type of the responses to double.
 ```{r}
 data_selection <- select(data_raw, submission_id, snellen_result, is_expert, trial_name, trial_number, fileID, response, RT, timeSpent)
 data_filtered <- filter(data_selection, trial_name != "test_snellen", trial_name != "b0_expert")
-data_mut <- mutate(data_filtered, response = as.double(response))
+data_mut <- mutate(data_filtered, response = as.double(response), submission_id = factor(submission_id))
 
 show(data_selection)
 show(data_filtered)
@@ -128,10 +128,10 @@ Step 6. Make a boxplot of the data.
 ```{r}
 cor(final_data$liking, final_data$detectability)
 scatter.smooth(y=final_data$liking, x= final_data$detectability, xlab = "Detection Scores", ylab = "Liking Scores")
-ggplot(final_data, aes(x = detectability, y = liking)) + geom_point() + geom_smooth(method = "lm")
+ggplot(final_data, aes(x = detectability, y = liking)) + geom_jitter(height = 0.25, width = 0.25) + xlim(1,7) + ylim(1,7) + geom_smooth(method = "lm")
 ```
 
-Step 7. Run a bayesian fixed-effects model 
+Step 7. Run bayesian fixed-effects models
 ---
 Change datatype of liking and detectability to integer to use brm for cumulative family.
 
@@ -143,10 +143,44 @@ brm_data_cumulative <- brm(formula=liking ~ mo(detectability), data=final_data_m
 summary(brm_data_cumulative)
 ```
 
+Cumulative family for mixed/random effects:
+```{r}
+brm_mixed <- brm(formula=liking ~ mo(detectability) + (1|submission_id), data=final_data_mutated, family = "cumulative")
+summary(brm_mixed)
+```
+
+```{r}
+brm_mixed2 <- brm(formula=liking ~ mo(detectability) + (1|submission_id) + (1|fileID), data=final_data_mutated, family = "cumulative")
+summary(brm_mixed2)
+```
+
+Step 8. Compare different bmr models.
+---
+```{r}
+
+loo(brm_data_cumulative, brm_mixed)
+
+```
 
 ```{r}
 
-brm_data_gaussian <- brm(formula=liking ~ mo(detectability), data=final_data, family = "gaussian")
-summary(brm_data_gaussian)
+loo(brm_data_cumulative, brm_mixed2)
+
+```
+
+```{r}
+
+loo(brm_mixed, brm_mixed2)
+
+```
+
+Plotting:
+```{r}
+
+plot(brm_mixed)
+```
+
+```{r}
+marginal_effects(brm_mixed)
 
 ```
