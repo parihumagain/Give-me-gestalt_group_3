@@ -93,8 +93,8 @@ We also collect control variables, namely the result of the Snellen's Eye Chart 
 ## Exclusion criteria
 
 1. the dataset of a participant will be excluded if the participant choose the same value for all images in liking and/or detectability. <br>
-2. To detect outliers in terms of time taken for a single trial, we will calculate the standard deviation of the RT distribution, because we assume that these participants are not interested or distracted. These trials will be excluded. <br>
-3. To detect outliers in terms of liking or detectability for a single trial, we will calculate the standard deviation of the their distributions. Whether these values will be excluded will be evaluated if they skew the correlation strongly. <br>
+2. a trial will be excluded if the standdard derivation of the RT is +/-2.5% <br>
+3. SNELLEN?????<br>
 4. We reserve the right to exclude people with expertise in cubist art in case their answers differ from the data of participants without expertise in cubist art. We decided to do that because they might have seen the presented paintings beforehand and therefore could be influenced by their prior knowledge about the paintings. We assume that they might have different opinions on what makes a cubist painting likeable. In general, experts probably have higher scores in liking and are able to detect patterns better.
 
     
