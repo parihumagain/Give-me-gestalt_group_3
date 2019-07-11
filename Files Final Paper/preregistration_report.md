@@ -147,11 +147,29 @@ cor(final_data$liking, final_data$detectability)
    
 #### Bayesian Fixed-effects Model
 
-We use the recommended bayesian fit model called bmr function:
+We use the recommended bayesian fit model called bmr function and tried different approaches: <br>
+
+Cumulative Family: <br>
 ```
 brm_data_cumulative <- brm(formula=liking ~ mo(detectability), data=final_data_mutated, family = "cumulative")
 ```
-  
+Cumulative family for mixed/random effects: <br>
+```
+brm_mixed <- brm(formula=liking ~ mo(detectability) + (1|submission_id), data=final_data_mutated, family = "cumulative")
+summary(brm_mixed)
+```
+
+```
+brm_mixed2 <- brm(formula=liking ~ mo(detectability) + (1|submission_id) + (1|fileID), data=final_data_mutated, family = "cumulative")
+summary(brm_mixed2)
+```
+
+To compare the different models we use the loo function:
+```{r}
+loo(brm_data_cumulative, brm_mixed)
+loo(brm_data_cumulative, brm_mixed2)
+loo(brm_mixed, brm_mixed2)
+```
 
 ## Resources
 
