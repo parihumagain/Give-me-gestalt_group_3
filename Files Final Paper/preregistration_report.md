@@ -82,22 +82,19 @@ In the last section the participants can provide personal information including 
 The data aquisition will assign several values from an ordninal scale from 1 to 7 (see general remarks about the design) to each image for <br>
 - Detactability (independent, x-axis) <br>
 - Linking (dependent, y-axis) <br>
-ACHTUNG NICHT VOLLSTÄNDIG (mean? exclude?)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! <br>
-such that for each image an average value can be computed. We try to find out more about the correlation of the variables. <br>
-We also collect control variables namely the result of the Snellen's Eye Chart Test ("snellen_result"), prior knowledge about cubist art ("is_expert", dichotom), age and gender. <br>
+
+We also collect control variables, namely the result of the Snellen's Eye Chart Test ("snellen_result"), prior knowledge about cubist art ("is_expert", dichotom) and age. <br>
 We will run an additional analysis for participants who fail the Snellen's Eye Chart Test (value <= 6) to compare their results to participants who pass the test (value >= 7). <br>
-
-
+We will test whether age has an effect on liking and detectability scores, by correlating each of the two variables with age. 
 
 # Analysis Plan
 
 ## Exclusion criteria
 
 1. the dataset of a participant will be excluded if the participant choose the same value for all images in liking and/or detectability. <br>
-ACHTUNG WAS IST MIT STANDARD ABWEICHUNG?????????????????????????????????????????
-2. To detect outliers in terms of time taken for a single trial, we will generate the standart derivation of the RT distribution, because we assume that they are not interested or distracted. <br>
-3. To detect outliers in terms of liking or detectability for a single trial, we will generate the standart derivation of the their distributions.
-4. We reserve the right to exclude people with expertise in cubist art in case their answers differ from the data of participants without expertise in cubist art. We decided to do that because they might have seen the presented paintings beforehand and therefore could be influenced by their prior knowledge about the paintings. Apart from that we assume that they might have different opinions on what makes a cubist painting likeable. In general, experts probably have higher scores in liking and are able to detect patterns better.
+2. To detect outliers in terms of time taken for a single trial, we will calculate the standard deviation of the RT distribution, because we assume that these participants are not interested or distracted. These trials will be excluded. <br>
+3. To detect outliers in terms of liking or detectability for a single trial, we will calculate the standard deviation of the their distributions. Whether these values will be excluded will be evaluated if they skew the correlation strongly. <br>
+4. We reserve the right to exclude people with expertise in cubist art in case their answers differ from the data of participants without expertise in cubist art. We decided to do that because they might have seen the presented paintings beforehand and therefore could be influenced by their prior knowledge about the paintings. We assume that they might have different opinions on what makes a cubist painting likeable. In general, experts probably have higher scores in liking and are able to detect patterns better.
 
     
 ## Confirmatory hypothesis testing
@@ -122,16 +119,22 @@ On recommendation of Michael Franke we are planning on doing a baysian analysis 
 #### Linear Regression
 
 1. Testing assumptions for linear regression: <br>
-  * Shapirotest for testing normal distribution of liking and detectability
+  * Shapirotest for testing normality of the distribution of liking and detectability variables
   * gvlma package for testing
-   ```
-   hist(final_data2$liking)
-   hist(final_data2$detectability)
-   par(mfrow=c(2,2))
-   typeof(final_data2)
+    * Global Stat	
+    * Skewness		
+    * Kurtosis	
+    * Link Function	
+    * Heteroscedasticity
 
-   mod2 <- lm(final_data$liking ~ final_data$detectability, data=final_data)
-   gvlma::gvlma(mod2)
+   ```
+   hist(final_data$liking)
+   hist(final_data$detectability)
+   par(mfrow=c(2,2))
+   typeof(final_data)
+
+   mod <- lm(final_data$liking ~ final_data$detectability, data=final_data)
+   gvlma::gvlma(mod)
    ```
    
 2. Calculating correlation
@@ -142,7 +145,10 @@ cor(final_data$liking, final_data$detectability)
    
 #### Bayesian Fixed-effects Model
 
-
+We use the recommended bayesian fit model called bmr function:
+```
+brm_data_cumulative <- brm(formula=liking ~ mo(detectability), data=final_data_mutated, family = "cumulative")
+```
   
 
 ## Resources
