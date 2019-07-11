@@ -4,7 +4,7 @@
 
 Gestalt theory has been around for a while but it was never initially proven, that people prefer art in which they can recognize patterns and structures. The experiment we reproduce acknowledge this lack of scientific proof of a relation that was proposed in many different contexts: philosophy, psychology and neuroscience. Cubist art is chosen since it is a mixture of forms, which need to be assembled by the viewer - and that are more or less easy to detect. Reviewing the experiment we noticed that only 20 participants were tested and a strong positive correlation between liking and understanding was suggested [1]. We aim to have more participants for our study to get a broader and more reliable result. <br>
 We are also curios about 60 monochrome paintings, that were used in the experiment but were not mentioned at all in the paper. Therefore 
-we reduced stimuli to the monochrome images to see if the result are still as clear and the corelation is as strong as suggested in the original study. Furthermore the question is wether it increases or decreases the effect shown in the paper. Apart from that it takes the focus from the object recognition due to colour to object recognition to the mere form of the image. Apart from that the use of only 60 images improves the time it takes the participant to complete the experiment and ensures a higher concentration throughout the experiment.
+we reduced stimuli to the monochrome images to see if the result are still as clear and the corelation is as strong as suggested in the original study. Furthermore the question is wether it increases or decreases the effect shown in the paper. Besides, it takes the focus from the object recognition due to colour to object recognition to the mere form of the object. Additionally, he use of only 60 images improves the time it takes the participant to complete the experiment and ensures a higher concentration throughout the experiment.
 
 
 # Research questions
@@ -74,7 +74,7 @@ First we welcome the participants and ask them to use a PC or Laptop. We ensure 
 The experiment section consists of two blocks. In each block 60 images are shown to the participants in randomized order. Both blocks contain the same 60 images. The order of the blocks is fixed. To make our and the original experiment comparable we decided to keep the same order. The image rating and the questions asked are as described in the general remarks about the design (7-point-scale).
 
 
-### 3. Outro
+### 3. Additional Information
 
 In the last section the participants can provide personal information including age, gender and further comments. This information is voluntary. After pressing the "Submit" button the data will be sent and a "Thank you" message is displayed.
 
@@ -84,8 +84,9 @@ The data aquisition will assign several values from an ordninal scale from 1 to 
 - Linking (dependent, y-axis) <br>
 
 We also collect control variables, namely the result of the Snellen's Eye Chart Test ("snellen_result"), prior knowledge about cubist art ("is_expert", dichotom) and age. <br>
-We will run an additional analysis for participants who fail the Snellen's Eye Chart Test (value <= 6) to compare their results to participants who pass the test (value >= 7). <br>
-We will test whether age has an effect on liking and detectability scores, by correlating each of the two variables with age. 
+  * We will run an additional analysis for participants who fail the Snellen's Eye Chart Test (value <= 6) to compare their results to participants who pass the test (value >= 7). <br>
+  * We will test whether age has an effect on liking and detectability scores, by correlating each of the two variables with age. <br>
+  * for handling of experts see exclusion criterias below
 
 # Analysis Plan
 
