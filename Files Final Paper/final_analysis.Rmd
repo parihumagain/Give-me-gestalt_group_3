@@ -43,7 +43,35 @@ Step 1. Read the data and take a glimpse of it.
 data_raw <- read_csv("results_71_givemegestalt_group3_group3.csv")
 glimpse(data_raw)
 ```
+Total number of participents:
+```{r}
+length(unique(data_raw$submission_id))
+```
+Detecting the gender data provided and their count:
+```{r}
+data_gender_male <- filter(data_raw,gender == "male")
+data_gender_female <- filter(data_raw,gender == "female")
+data_gender_diverse <- filter(data_raw,gender == "divers")
 
+length(data_gender_male$gender)/122
+length(data_gender_female$gender)/122
+length(data_gender_diverse$gender)/122
+sum(is.na(data_raw$gender))/122 # counting how many NA are there.
+```
+There are total 34 male participents, 58 female and 4 of them identify teir gender as diverse and 3 of them did not submitted the data about gender.
+
+Data set according to age :
+```{r}
+data_age_below_20 <- filter(data_raw,age <= 19)
+data_age_20_40<-filter(data_raw,age>=20&age<=40)
+data_age_ab_40 <- filter(data_raw,age > 40)
+#divide by 122 beacuse there are 122 entries per person
+length(data_age_below_20$age)/122 
+length(data_age_20_40$age)/122
+length(data_age_ab_40$age)/122
+sum(is.na(data_raw$age))/122
+```
+From total participants there are total 16 participants, who are below age of 20, 71 are in range of 20 - 40 and 10 are in range of 41 to 63. 2 participants did not give data for age. 
 
 Step 2. Select only the columns of interest and filter trials that are not interesting for the calculations.
 Change data type of the responses to double and submission_id to factor.
